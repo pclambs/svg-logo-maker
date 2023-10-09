@@ -29,7 +29,7 @@ This application allows users to create a basic logo. It utilizes inquirer to pr
 
 ## Live Screen Recording of Application Functionality
 
-ADD LINK
+https://drive.google.com/file/d/1zGkWKaYFSb7QxObHgejWKxvxvaZrZAdF/view?usp=drive_link
 
 ## Screenshots
 
