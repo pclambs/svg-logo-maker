@@ -2,7 +2,6 @@ export function generateLogo(shapeProperties, textProperties) {
     const { shapeColor, shapeSVG } = shapeProperties
     const { text, textColor } = textProperties
 
-    // Define SVG template
     const svgTemplate = `
       <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
         ${shapeSVG}
