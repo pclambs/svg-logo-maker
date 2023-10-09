@@ -4,6 +4,7 @@ import { Circle } from "./lib/circle.js"
 import { Square } from "./lib/square.js"
 import { Triangle } from "./lib/triangle.js"
 import { generateLogo } from "./utils/generateLogo.js"
+import { writeFile } from "fs/promises"
 
 function init() {
   inquirer
@@ -33,9 +34,11 @@ function init() {
         { shapeColor: shape.color, shapeSVG },
         { text: answers.textChoice, textColor: answers.textColorChoice }
       )
-      console.log(logoSVG)
-      
+      return writeFile("./examples/logo.svg", logoSVG)
     })
+    .then(() => {
+        console.log("SVG logo saved as logo.svg")
+      })
     .catch((error) => {
       console.error(error)
     })
